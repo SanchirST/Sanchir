@@ -1,0 +1,34 @@
+header{
+    display: flex;
+    text-indent: 120px;
+}
+
+.Swedavia{
+    display: flex;
+}
+.Swedavia img{
+    width: 30%;
+    height: 10%;
+}
+.RAW{
+    display: flex;
+}
+.RAW img{
+    width: 30%;
+    height: 10%;
+}
+.Solom{
+    display: flex;
+}
+.Solom img{
+    width: 30%;
+    height: 10%;
+}
+
+.MAX{
+    display: flex;
+}
+.MAX img{
+    width: 30%;
+    height: 10%;
+}
