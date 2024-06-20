@@ -1,0 +1,144 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*General */
+body{
+    font-family: "Poppins";
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation  desktop */
+nav, .nav-link{
+    display: flex;
+}
+
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-link{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    color: gray;
+    border: 5px;
+}
+
+#logo{
+    font-size: 3rem;
+}
+
+#logo:hover{
+    cursor: default;
+}
+
+/*Mobil nav */
+
+#mobil-line{
+    display: none;
+}
+#mobil{
+    display: none;
+}
+
+#mobil-nav{
+    position: relative;
+    display: inline-block;
+}
+
+.mobil-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.mobil-icon span{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.mobil-link{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.mobil-link a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.mobil-link li{
+    list-style: none;
+}
+
+.mobil-link.open{
+    max-height: 300px;
+}
+
+.mobil-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);  
+}
+
+.mobil-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobil-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+/* Screen size */
+
+@media screen and (max-width: 1200px) {
+    #desktop{
+        display: none;
+    }
+    #desktop-line{
+        display: none;
+    }
+
+    #mobil{
+        display: flex;
+    }
+
+    #logo{
+        font-size:1.5rem;
+    }
+}
